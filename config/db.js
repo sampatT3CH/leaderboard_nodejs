@@ -3,10 +3,10 @@ import mysql from 'mysql2';
 
 // connect to mysql
 const connection = mysql.createConnection({
-    host: process.env.HOST,
+    host: process.env.DB_HOST,
     user: 'root',
     password: 'sampat',
-    database: process.env.DATABASE,
+    database: process.env.DB_DBNAME,
 });
 
 const connectDB = async () => {
